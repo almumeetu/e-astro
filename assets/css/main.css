@@ -28529,7 +28529,7 @@ START: Footer CSS
 .machine-grid img {
     max-width: 500px;
     width: 100%;
-    height: 500px;
+    height: 300px;
     display: block;
     aspect-ratio: 4/3;
 }
