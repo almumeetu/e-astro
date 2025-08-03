@@ -28589,6 +28589,88 @@ START: Footer CSS
     }
 }
 
+
+.header-Right{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header-Right img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.header-Right .info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.header-Right .info h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.awards {
+    margin-top: 10px;
+}
+
+.ship-img {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ship-img img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.ship-img p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td,
+.table th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.table th {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .info {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.certificates-awerd img,
+.puchaing-patterns img,
+.oversea-buisness img{
+    width: 100%;
+}
 /* !END: RTL CSS */
 
 /*# sourceMappingURL=main.css.map */
