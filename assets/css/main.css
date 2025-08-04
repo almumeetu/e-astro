@@ -28611,7 +28611,6 @@ START: Footer CSS
 
 .header-Right .info h1 {
     font-size: 28px;
-    color: #333;
 }
 
 .info p {
@@ -28626,7 +28625,39 @@ START: Footer CSS
     margin-top: 20px;
     text-align: center;
 }
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+
+  @media (max-width: 576px) {
+    .table th,
+    .table td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
 .ship-img img {
     max-width: 100%;
     border-radius: 8px;
@@ -28670,6 +28701,63 @@ START: Footer CSS
 .puchaing-patterns img,
 .oversea-buisness img{
     width: 100%;
+}
+
+    .section-title {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+    .timeline-line {
+      position: relative;
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+
+    .timeline-line::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -6px;
+      width: 12px;
+      height: 12px;
+      background: #162d52;
+      border-radius: 50%;
+    }
+
+    .year-block {
+      margin-bottom: 2rem;
+    }
+
+    .year {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .date {
+      color: #333;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      margin-bottom: 5px;
+    }
+
+    .logo {
+      height: 40px;
+      object-fit: contain;
+    }
+
+    @media (max-width: 576px) {
+      .section-title {
+        font-size: 1.4rem;
+      }
+    }
+    .footer-top {
+    padding: 100px 0 35px 0 !important;
+    margin-bottom: 0 !important;
 }
 /* !END: RTL CSS */
 
