@@ -28590,7 +28590,7 @@ START: Footer CSS
 }
 
 
-.header-Right{
+.header-Right {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -28625,39 +28625,42 @@ START: Footer CSS
     margin-top: 20px;
     text-align: center;
 }
-  .table-responsive {
+
+.table-responsive {
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-  }
+}
 
-  .table {
+.table {
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
     margin-bottom: 1rem;
-  }
+}
 
-  .table th,
-  .table td {
+.table th,
+.table td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
     white-space: nowrap;
-  }
+}
 
-  .table th {
+.table th {
     background-color: #f5f5f5;
     font-weight: bold;
-  }
+}
 
-  @media (max-width: 576px) {
+@media (max-width: 576px) {
+
     .table th,
     .table td {
-      font-size: 14px;
-      padding: 8px;
+        font-size: 14px;
+        padding: 8px;
     }
-  }
+}
+
 .ship-img img {
     max-width: 100%;
     border-radius: 8px;
@@ -28699,65 +28702,157 @@ START: Footer CSS
 
 .certificates-awerd img,
 .puchaing-patterns img,
-.oversea-buisness img{
+.oversea-buisness img {
     width: 100%;
 }
 
+.section-title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.timeline-line {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.timeline-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    background: #162d52;
+    border-radius: 50%;
+}
+
+.year-block {
+    margin-bottom: 2rem;
+}
+
+.year {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.date {
+    color: #333;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.description {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.logo {
+    height: 40px;
+    object-fit: contain;
+}
+
+@media (max-width: 576px) {
     .section-title {
-      font-weight: bold;
-      font-size: 2rem;
-    }
-
-    .timeline-line {
-      position: relative;
-      margin-left: 20px;
-      padding-left: 20px;
-    }
-
-    .timeline-line::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -6px;
-      width: 12px;
-      height: 12px;
-      background: #162d52;
-      border-radius: 50%;
-    }
-
-    .year-block {
-      margin-bottom: 2rem;
-    }
-
-    .year {
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    .date {
-      color: #333;
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-
-    .description {
-      font-size: 0.95rem;
-      margin-bottom: 5px;
-    }
-
-    .logo {
-      height: 40px;
-      object-fit: contain;
-    }
-
-    @media (max-width: 576px) {
-      .section-title {
         font-size: 1.4rem;
-      }
     }
-    .footer-top {
+}
+
+.footer-top {
     padding: 100px 0 35px 0 !important;
     margin-bottom: 0 !important;
+}
+
+.history-main-wrapper {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.history-main-wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history-main-wrapper ul li {
+    margin: 0;
+}
+
+.history-main-wrapper .single-history {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+    /* for responsiveness */
+}
+
+.history-main-wrapper .year {
+    width: 100px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.history-main-wrapper .details {
+    width: 120px;
+    font-size: 14px;
+}
+
+.history-main-wrapper .description {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Last item - remove border */
+.history-main-wrapper ul li:last-child .single-history {
+    border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .history-main-wrapper .single-history {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .history-main-wrapper .year,
+    .history-main-wrapper .details,
+    .history-main-wrapper .description {
+        width: 100%;
+    }
+}
+.process-box {
+    height: 100%;
+}
+.contact-form-section {
+    background-color: #f8f9fa;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact-form {
+    background: #fff;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 /* !END: RTL CSS */
 
