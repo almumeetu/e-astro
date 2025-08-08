@@ -6018,7 +6018,6 @@ START: Hero CSS
     margin-left: 120px;
     margin-top: 113px;
     height: 100%;
-    max-width: 840px;
     width: 100%;
 }
 
@@ -6045,7 +6044,7 @@ START: Hero CSS
 
 .hero-section-2 .hero-info {
     margin-top: 113px;
-    margin-left: 110px;
+    margin-left: 150px;
 }
 
 @media (max-width: 1600px) {
@@ -6073,26 +6072,12 @@ START: Hero CSS
     }
 }
 
-.hero-section-2 .hero-info .section-heading .section-title {
-    font-size: 72px;
-}
 
-@media (max-width: 1199px) {
-    .hero-section-2 .hero-info .section-heading .section-title {
-        font-size: 45px;
-    }
-}
 
-@media only screen and (max-width: 992px) {
-    .hero-section-2 .hero-info .section-heading .section-title {
-        font-size: 40px;
-    }
-}
 
-@media only screen and (max-width: 767px) {
-    .hero-section-2 .hero-info .section-heading .section-title {
-        font-size: 32px;
-    }
+
+.pl-24{
+    padding-left: 24px !important; 
 }
 
 @media only screen and (max-width: 767px) {
