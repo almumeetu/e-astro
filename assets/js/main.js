@@ -13,47 +13,10 @@
         $('#rrCheckoutCouponForm').slideToggle(400);
     });
 
-    // Color Scheme Swithcer
-    const storageKey = 'theme-preference';
-
-    const onClick = () => {
-        theme.value = theme.value === 'light' ? 'dark' : 'light';
-        setPreference();
-    }
-
-    const getColorPreference = () => {
-        if (localStorage.getItem(storageKey)) {
-            return localStorage.getItem(storageKey);
-        } else {
-            return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-        }
-    }
-
-    const setPreference = () => {
-        localStorage.setItem(storageKey, theme.value);
-        reflectPreference();
-    }
-
     const reflectPreference = () => {
-        document.firstElementChild.setAttribute('data-theme', theme.value);
-        document.querySelector('#theme-toogle')?.setAttribute('aria-label', theme.value);
-    }
-
-    const theme = {
-        value: getColorPreference(),
-    }
-
-    // set early so no page flashes / CSS is made aware
-    reflectPreference();
-
-    $(window).on("load", function(event) {
-        // set on load so screen readers can see latest value on the button
-        reflectPreference();
-
-        // now this script can find and listen for clicks on the control
-        document.querySelector('#theme-toogle').addEventListener('click', onClick);
-    });
-
+    document.firstElementChild.setAttribute('data-theme', 'light');
+    document.querySelector('#theme-toogle')?.setAttribute('aria-label', 'light');
+}
     /*======================================
         Preloader activation
     ========================================*/

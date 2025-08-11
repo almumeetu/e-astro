@@ -586,6 +586,9 @@ ul {
     position: relative;
     overflow: hidden;
 }
+.text-justify{
+    text-align: justify;
+}
 
 @media (max-width: 1199px) {
     .section-heading .section-title {
@@ -29299,6 +29302,20 @@ only screen and (min-width: 576px) and (max-width: 767.98px) {
     border: 0;
 }
 
+.pr-30,
+p {
+    text-align: justify;
+}
+[data-theme=light] p {
+    color: #000000;
+}
+.footer-top p {
+    color: #fff;
+}
+.header-logo.d-lg-block {
+    background: #222;
+    padding: 0 20px;
+}
 /* !END: RTL CSS */
 
 /*# sourceMappingURL=main.css.map */
