@@ -38,13 +38,13 @@ START: Template Default CSS
     --rr-fw-bold: 700;
     --rr-fw-ebold: 800;
     --rr-fw-black: 900;
-    --rr-fs-body: 16px;
-    --rr-fs-p: 16px;
+    --rr-fs-body: 18px;
+    --rr-fs-p: 18px;
     --rr-fs-h1: 60px;
     --rr-fs-h2: 48px;
     --rr-fs-h3: 24px;
     --rr-fs-h4: 20px;
-    --rr-fs-h5: 16px;
+    --rr-fs-h5: 18px;
     --rr-fs-h6: 14px;
     --rr-color-common-white: #ffffff;
     --rr-color-common-black: #000000;
@@ -1368,7 +1368,9 @@ ul {
 .mb-80 {
     margin-bottom: 80px;
 }
-
+.mb-30{
+    margin-bottom: 30px !important;
+}
 .mb-85 {
     margin-bottom: 85px;
 }
@@ -3163,10 +3165,12 @@ START: Header CSS
 
 .header .primary-header-inner .header-menu-wrap ul li:first-child {
     margin-left: 0;
+    margin-right: 0 !important;
 }
 
 .header .primary-header-inner .header-menu-wrap ul li:last-child {
     margin-right: 0;
+    margin-left: 0 !important;
 }
 
 .header .primary-header-inner .header-menu-wrap ul li a {
@@ -3186,7 +3190,7 @@ START: Header CSS
 
 @media (max-width: 1199px) {
     .header .primary-header-inner .header-menu-wrap ul li a {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -3572,11 +3576,7 @@ START: Header CSS
     }
 }
 
-.header-2 {
-    top: 0;
-    left: 120px;
-    width: calc(100% - 120px);
-}
+
 
 @media only screen and (max-width: 992px) {
     .header-2 {
@@ -8728,8 +8728,9 @@ START: About CSS
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-top: 10px solid #02050A;
-    border-left: 10px solid #02050A;
+    border-top: none;
+    border-left: none;
+    border-radius: 15%;
 }
 
 .about-img-box .shape {
@@ -16614,7 +16615,7 @@ START: Team CSS
 .team-item .team-thumb img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
@@ -28599,6 +28600,7 @@ only screen and (min-width: 576px) and (max-width: 767.98px) {
     }
 }
 
+
 @media (max-width: 575.98px),
 only screen and (min-width: 576px) and (max-width: 767.98px) {
     .mt-120 {
@@ -28915,7 +28917,7 @@ only screen and (min-width: 576px) and (max-width: 767.98px) {
 
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     object-fit: cover;
 }
@@ -28931,6 +28933,13 @@ only screen and (min-width: 576px) and (max-width: 767.98px) {
     gap: 20px;
 }
 
+.gallery-row,
+.gallery-item {
+    margin-bottom: 20px;
+}
+.gallery-row .gallery-item {
+    margin-bottom: 0px;
+}
 @media (max-width: 768px) {
     .gallery-row {
         flex-direction: column;
@@ -28951,6 +28960,7 @@ only screen and (min-width: 576px) and (max-width: 767.98px) {
 .machine-title {
     color: #004aad;
     font-weight: 700;
+    font-size: 32px;
     text-align: center;
     margin-bottom: 80px;
     text-transform: uppercase;
@@ -29315,6 +29325,53 @@ p {
 .header-logo.d-lg-block {
     background: #222;
     padding: 0 20px;
+}
+.hero-section-2 .hero-sidebar .sidebar-social li a {
+    color: #191717;
+}
+div#theme-toogle {
+    display: none;
+}
+.about-img-box .img-1 {
+    max-width: 100%;
+    width: 100%;
+    height: 465px;
+}
+
+.header-2 {
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    border-bottom: 1px solid #b8bbc3;
+}
+
+[data-theme=light] .header.fixed {
+    background-color: var(--rr-color-common-white);
+    border-bottom: 1px solid #efefef;
+    WIDTH: 100% !IMPORTANT;
+    LEFT: 0 !IMPORTANT;
+}
+.submenu li {
+    margin: 0 !important;
+}
+.section-heading .sub-heading {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.hero-header {
+    top: 0;
+    left: 120px !important;
+    width: calc(100% - 120px)  !important;
+}
+@media screen and (max-width: 991.98px){
+    .hero-header {
+        top: 0;
+        left: 0 !important;
+        width: 100% !important;
+    }
+}
+.object-fit-cover{
+    object-fit: cover !important;
 }
 /* !END: RTL CSS */
 
